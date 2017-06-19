@@ -1,0 +1,23 @@
+{% capture facebookstyle %} border:none; overflow:hidden; {% endcapture %}
+{% for var in site.scalevars %}
+	{% capture facebookstyle %} {{var}}transform:scale({{site.facebook.embedfrac}}); {{var}}transform-origin: 0 0; {{facebookstyle}} {% endcapture %}
+{% endfor %}
+{% assign embedwidth = site.facebook.nativewidth | times: site.facebook.embedfrac | round %}
+{% assign embedheight = site.facebook.nativeheight | times: site.facebook.embedfrac | round %}
+
+<script>
+	function fbframe(classname, page) {
+		style='\
+		<iframe src=' + page + ' scrolling="no" frameborder="0" allowTransparency="true" width="{{site.facebook.nativewidth}}px" height="{{site.facebook.nativewidth}}px" \
+			style="{{facebookstyle}};">\
+		</iframe>';
+		document.getElementById(classname).innerHTML = style;
+	}
+
+	function fbembedpage(id, page)
+	{
+		divstr = '<div id=' + id + ' style="width:{{embedwidth}}px; height:{{embedheight}}px; overflow:hidden; margin-bottom:{{site.facebook.foot}}"></div>'
+		document.write(divstr);
+		fbframe(id, page);
+	}
+</script>

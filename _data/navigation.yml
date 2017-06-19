@@ -1,0 +1,16 @@
+# main links
+main:
+  #- title: "Research"
+  #  url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Press"
+    url: /press/
+  #- title: "Test"
+  #  url: /test/
+  #- title: "Sample Collections" #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+  
+topimage:
+   image: /assets/images/rxj_cover.png

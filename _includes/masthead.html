@@ -1,0 +1,43 @@
+{% capture tightprops %} height:{{site.headerinfo.height}}; padding:0; margin:0 {% endcapture %}
+{% capture menuprops %} width:100%; {{tightprops}} {% endcapture %}
+{% capture fixtotop %} position:fixed; top:0cm {% endcapture %}
+
+{% if site.headerinfo.spanimage %}
+	{% capture menuprops %} background-color:transparent; border-color:transparent; {{menuprops}} {% endcapture %}
+{% endif %}
+{% capture outerprops %} style="{{menuprops}}; {{fixtotop}};" {% endcapture %}
+{% capture backprops %} style="	background:url({{site.headerinfo.spanimage}}); z-index:2; {{menuprops}}; {{fixtotop}}; background-repeat:no-repeat; background-position:'center center'; backgroud-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;" {% endcapture %}
+{% capture menuprops %} style="z-index:3; {{menuprops}};" {% endcapture %}
+
+
+{% if site.headerinfo.spanimage %}
+	<div class='entry' {{backprops}}></div>
+{% endif %}
+
+<div class="masthead" {{outerprops}}>
+	<div class="masthead__inner-wrap" {{menuprops}}>
+		<div class="masthead__menu" {{menuprops}}>
+			<nav id="site-nav" class="greedy-nav" {{menuprops}}>
+				{% if site.headerinfo.homeimage %}
+					<a href="{{ '/' | absolute_url }}"> <img src="{{site.headerinfo.homeimage}}" style="z-index:3; left:0cm; {{tightprops}}; {{fixtotop}};"> </a>
+				{% else %}
+					<a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+				{% endif %}
+				<ul class="visible-links">
+					{% for link in site.data.navigation.main %}
+						{% if link.url contains 'http' %}
+              				{% assign domain = '' %}
+            			{% else %}
+              				{% assign domain = site.url | append: site.baseurl %}
+            			{% endif %}
+						<li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" style="color:{{site.headerinfo.textcolor}}">{{link.title}}</a></li>
+          			{% endfor %}
+	  			</ul>
+				<button style="height:{{site.headerinfo.height}}"><div class="navicon"></div></button>
+				<ul class="hidden-links hidden" style="background-color:{{site.headerinfo.menucolor}};"></ul>
+      		</nav>
+    	</div>
+	</div>
+</div>
+
+<div style="padding-bottom:{{site.headerinfo.height}}"></div>
