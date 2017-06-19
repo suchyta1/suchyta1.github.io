@@ -1,0 +1,21 @@
+{% assign padspace = 65 %}
+{% assign mainheight = 500 %}
+{% assign totalheight = mainheight | plus: padspace %}
+{% assign twice = padspace | time: 2 %}
+{% assign gray = "gainsboro" %}
+
+
+<!-- This is needed to get HTML to know the spacing of the fixed things -->
+<div id="cvblank" style="padding-bottom:{{totalheight}}px; display:none; z-index:8; width:100%; background-color:white"></div>
+
+
+<!-- The fixed position CV and gray background -->
+<div id="cvgray" style="position:fixed; height:{{totalheight}}px; top:{{site.headerinfo.height}}; display:none; z-index:9; width:100%; background-color:{{gray}};"></div>
+<div style="width:95%; max-width:800px; position:fixed; top:{{site.headerinfo.height}}; margin-top:{{padspace}}px; height:{{mainheight}}px; z-index:10">
+	<iframe id="cv" frameborder="1" src="https://drive.google.com/file/d/0B4AAwvZlUdfeS0NiSXdtZWVwUEk/preview" style="width:100%; height:inherit; display:none"></iframe>
+</div>
+
+
+<!-- This living here is a little confusing. It's the spacing between the header and the title text, and when the broswer is narrow, the avatar area fits in here.
+	 However, I didn't really want to leave this as an adjustable parameter anyway, because changing it messes with things not overlapping. -->
+<div style="padding-bottom:{{padspace}}px"></div>

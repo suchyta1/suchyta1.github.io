@@ -23,7 +23,12 @@
 				{% else %}
 					<a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
 				{% endif %}
+
+
 				<ul class="visible-links">
+					<li class="masthead__menu-item"><a onclick="hideToggle()" style="color:{{site.headerinfo.textcolor}}; z-index:3; display:block; {{menuprops}};"><i class="fa fa-fw fa-file-pdf-o" aria-hidden="true"></i> CV</a></li>
+
+
 					{% for link in site.data.navigation.main %}
 						{% if link.url contains 'http' %}
               				{% assign domain = '' %}

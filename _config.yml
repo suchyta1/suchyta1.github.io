@@ -84,6 +84,7 @@ author:
   office           : "Building 4100, C234"
   phone            : "(865) 576-6340"
   email            : "eric.d.suchyta@gmail.com"
+  cv               : "https://drive.google.com/file/d/0B4AAwvZlUdfeVUNsWkhPYkwyVVE/view?usp=sharing"
   uri              :
   bitbucket        : #"eric_suchyta"
   codepen          :
@@ -284,9 +285,6 @@ headerinfo:
     menucolor: black
     spanimage: /assets/images/rxj_cover.png
     homeimage: /assets/images/home_tifo-small.jpg
-
-sidebarinfo:
-    offset: 1em
 
 scalevars:
     - "-ms-"

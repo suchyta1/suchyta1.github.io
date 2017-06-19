@@ -23,6 +23,15 @@
 	<script src="/assets/Ideal-Image-Slider-JS/extensions/bullet-nav/iis-bullet-nav.js"></script>
     {% include facebookembed.html %}
 
+	<script>
+		function hideToggle(){
+			var divs = ["cv", "cvblank", "cvgray", "spacer"];
+			for (var i=0; i<divs.length; i++) {
+				$(document.getElementById(divs[i])).toggle();
+			}
+		}
+	</script>
+
     {{ content }}
 
     <div class="page__footer">

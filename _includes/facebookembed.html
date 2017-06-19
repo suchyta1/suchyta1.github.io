@@ -16,7 +16,7 @@
 
 	function fbembedpage(id, page)
 	{
-		divstr = '<div id=' + id + ' style="width:{{embedwidth}}px; height:{{embedheight}}px; overflow:hidden; margin-bottom:{{site.facebook.foot}}"></div>'
+		divstr = '<div id=' + id + ' style="position:relative; z-index:-1; width:{{embedwidth}}px; height:{{embedheight}}px; overflow:hidden; margin-bottom:{{site.facebook.foot}}"></div>'
 		document.write(divstr);
 		fbframe(id, page);
 	}
