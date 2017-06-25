@@ -6,6 +6,16 @@
    Default button
    ========================================================================== */
 
+.fake {
+  cursor: pointer;
+  background-color: rgba(187, 187, 187, 0.2); 
+
+  &:hover {
+    background-color: rgba(187, 187, 187, 0.5);
+  }
+}
+
+
 .btn {
   /* default button */
   display: inline-block;

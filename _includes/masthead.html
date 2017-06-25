@@ -9,6 +9,8 @@
 {% capture backprops %} style="	background:url({{site.headerinfo.spanimage}}); z-index:2; {{menuprops}}; {{fixtotop}}; background-repeat:no-repeat; background-position:'center center'; backgroud-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;" {% endcapture %}
 {% capture menuprops %} style="z-index:3; {{menuprops}};" {% endcapture %}
 
+{% assign pdflink = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADQ0lEQVRoQ+2aTUgbQRTHXxKpNptKK/iFCQS/DilULXiwERpC0KOinjyYS0FRBFGwtFBRemkNngQPQg8G9aSgx4gk9hAMCIUIDRR3xUOkfkBL22zQ0mzKG5si1o1mZ+MkNgN7WHZm9v3mzXvvvx8auCVNc0s4ICnIpsNhA0l6mhbYeNwW02gCzV7vCzXmTw5it49rCwpe3jWZRDVudn4Okefv43lckt498fme0c5/Jcg9i+X5w+npAtobXRwfcDhAX1EB0f19VWCYgliGhuA4ECAHrWeYgxTW1oLgdlPDZAQIbjtamIwBoYXJKBAamIwDUQqTkSBKYDIWJFUYpiDmri7QG41Ja+3e0hJEw2GIxeNvkskZpiApqQVJet/k89nkxjADSQXi4+DgyY9Q6G2T1zueA6ERjV/8foiJIhS3tKTigH/6MvUIQgiTk8Qoc38/FLe2KoZhChKem4PTw8O/xleNjmYviCgIxPj80lIwDwxkJ8jn5WU4XluDPI6Dwro6MDqd2QnyPRiE0MgIMd4yNUVglDamMYJGb7W1kazVuLICOoNBKQcwB/k0NgZRQYCGhQXFEDiQOciH7m74eXQEDfPzkF9WphiGKUiU52G7rw/0lZXAVVdD1qZfLIa/IhEo7+wkQU8T8Mw8EotEYKu9HWonJqDIaiUVHosjwihpzECwqh95PPB4cZHYfXpwANu9vVDe0aGonjADwSA3OZ1EX6F3sMIfezykQKKATEgXTMlcVRU5Hlitss5iAoIGCy4XMRgBMP1iu1NSAnkGA0R3d4lkwesYQ3gd++G5nIy5URBUu7jiX/1+0P2RJVjNMWOdr+ooXcJuNxTW15P4QSgy1uOBxtXVS71yIyCYZnmXi8RBQiA+mp1NGtPYd29mBkSeJ3UGwY09PSTDXdbSDpJ45sBtUdTcTJ1m5ejTDhIaHiYVG4Ma5QjtAxQzEBSFGMCYhdArNNU72V5Mu0cwPr4Fg2dBS6GlriqSaQe5ygC1rudAEiu5abeP07wOynnkwgrktlZua6kVFLmtJbOSmLV0HPeKq6nRpmmxrzWtuLMjxUTxtfLPCmc/1ch+XLmWFWp10mo3mtbXN+Sm+z9+c1JrMW9int/kXRpgL6BhkgAAAABJRU5ErkJggg==" %}
+
 
 {% if site.headerinfo.spanimage %}
 	<div class='entry' {{backprops}}></div>
@@ -26,7 +28,7 @@
 
 
 				<ul class="visible-links">
-					<li class="masthead__menu-item"><a onclick="hideToggle()" style="color:{{site.headerinfo.textcolor}}; z-index:3; display:block; {{menuprops}};"><i class="fa fa-fw fa-file-pdf-o" aria-hidden="true"></i> CV</a></li>
+					<li class="masthead__menu-item"><a id="fcv" class="fake" onclick="hideToggle()" style="bottom:0; height:{{site.headerinfo.height}}; color:{{site.headerinfo.textcolor}}; z-index:3; {{menuprops}};"><i class="fa fa-fw fa-file-pdf-o" aria-hidden="true"></i>CV</a></li>
 
 
 					{% for link in site.data.navigation.main %}

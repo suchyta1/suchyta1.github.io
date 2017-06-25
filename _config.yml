@@ -79,9 +79,9 @@ analytics:
 author:
   name             : "Eric Suchyta"
   avatar           : "/assets/images/avatar1.jpg"
-  bio              : "(Computer) Scientist"
-  location         : "Oak Ridge National Lab"
-  office           : "Building 4100, C234"
+  bio              : "Computer Scientist"
+  location         : "ORNL"
+  office           : "Bldg. 4100, C234"
   phone            : "(865) 576-6340"
   email            : "eric.d.suchyta@gmail.com"
   cv               : "https://drive.google.com/file/d/0B4AAwvZlUdfeVUNsWkhPYkwyVVE/view?usp=sharing"
@@ -280,11 +280,11 @@ defaults:
 github: [metadata]
 
 headerinfo:
-    height: 75px
+    height: 50px
     textcolor: white
     menucolor: black
     spanimage: /assets/images/rxj_cover.png
-    homeimage: /assets/images/home_tifo-small.jpg
+    homeimage: /assets/images/home_tifo.jpg
 
 scalevars:
     - "-ms-"

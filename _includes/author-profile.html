@@ -4,10 +4,22 @@
   {% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+
+{% assign clear = "rgba(255,255,255,0.9)" %}
+{% assign opaque = "rgba(255,255,255,1)" %}
+{% capture grad %} 
+  background: white; 
+  background: -webkit-linear-gradient({{opaque}},{{clear}});
+  background: -o-linear-gradient({{opaque}},{{clear}});
+  background: -moz-linear-gradient({{opaque}},{{clear}});
+  background: linear-gradient({{opaque}},{{clear}})
+{% endcapture %}
+
+
+<div itemscope itemtype="http://schema.org/Person" style="position:relative; width:100%; z-index:15">
 
   {% if author.avatar %}
-    <div class="author__avatar">
+    <div class="author__avatar" style="position:relative; z-index:inherit">
       {% if author.avatar contains "://" %}
         <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image">
       {% else %}
@@ -16,8 +28,8 @@
     </div>
   {% endif %}
 
-  <div class="author__content">
-    <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
+  <div class="author__content" style="position:relative; z-index:inherit">
+    <h3 class="author__name" itemprop="name" style="margin-bottom:-0.2em">{{ author.name }}</h3>
     {% if author.bio %}
       <p class="author__bio" itemprop="description">
         {{ author.bio }}
@@ -25,8 +37,11 @@
     {% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+  <div class="author__urls-wrapper" style="margin-top:-0.2em; z-index:10">
+	<div style="position:fixed; left:0; top:0; width:10000px; {{grad}};">
+		<button class="btn btn--inverse" style="margin-bottom:20px; position:relative; left:175px; top:5px">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}
+		</button>
+	</div>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place" style="margin:0em; padding:0em">

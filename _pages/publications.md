@@ -20,11 +20,12 @@ I welcome you to query me using one of my favorite search tools linked above or 
 chosen to feature below.
 
 
-<div style="z-index:-1; position:relative; max-width:650px; width:100%">
+
+<div style="max-width:650px; width:100%">
 	<div style="max-width:500px; width:100%; margin:auto">
-		<h3 align="center" style="position:relative; color:green"> <i>Selected Abstracts</i> </h3>
+		<h3 align="center" style="color:green"> <i>Selected Abstracts</i> </h3>
 		<div id="slider" style="margin-top:1em">
-			<a href="https://www.usenix.org/conference/hotstorage17/program/presentation/lu"><img data-src="/assets/images/abstracts/canopus-square.png" style="z-order:0"></a>
+			<a href="https://www.usenix.org/conference/hotstorage17/program/presentation/lu"><img src="/assets/images/abstracts/canopus-square.png"></a>
 			<a href="http://inspirehep.net/record/1351294"><img data-src="/assets/images/abstracts/dwarfs-square.png"></a>
 			<a href="http://iopscience.iop.org/article/10.1088/1742-6596/759/1/012095/meta#artAbst"><img data-src="/assets/images/abstracts/sirius-square.png"></a>
 			<a href="http://inspirehep.net/record/1385717"><img src="/assets/images/abstracts/balrog-square.png"></a>
@@ -44,6 +45,7 @@ chosen to feature below.
 		</script>
 	</div>
 </div>
+
 
 
 

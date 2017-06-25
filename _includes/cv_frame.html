@@ -1,19 +1,41 @@
-{% assign padspace = 65 %}
-{% assign mainheight = 500 %}
-{% assign totalheight = mainheight | plus: padspace %}
-{% assign twice = padspace | time: 2 %}
-{% assign gray = "gainsboro" %}
+<!-- All these units are px -->
+{% assign padspace = 50 %}
+{% assign mainheight = 400 %}
+{% assign maxwidth = "600" %}
+{% assign bottompad = 10 %}
+{% assign totalheight = mainheight | plus: padspace | plus: bottompad %}
+{% assign gray = "white" %}
+{% assign opacity = "0.93" %}
+{% assign iconscale = "1.5" %}
+{% assign mygd = "https://drive.google.com/drive/folders/0B4AAwvZlUdfeVDRCOFpvclhPTE0?usp=sharing" %}
+{% assign gdlink = "data:image/png;base64,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" %}
+{% assign xlink = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACHklEQVRoQ+2ZMU4CQRSG3xCFKHIGjZ4BWhRiYacnwE6tNOEAYiyNGivt9AZaq5ClRStNtDLxDmJBBJ4ZzJLdMANvhpmFjUNJdvb93/v/mdndYRDzH4u5fnAAk3bQOTD1DnwXc5sIuA/AVqMVix4DdpGuNu6G1R0aoWYhew2MbUcrPFwNEY4ytUZFpkEK8Nd5uJ2keL82su5a5vHZE2mRAnwVsh5jLD8VAIj1TO1JGGEpQLOYw2kQ72tYqDaEWh1AVC45B2SdTu2VARChdXWmZMZMfr13fbv+QBpnxQEuvi/EuydD8DE9cABoXZ6SIIwDJEs7MLuxFepemwARFO8PpkAYB0gsLsPc4QnAfJoMIRJPdcE4AC+sAjGOeF7LCgAVYlzxVgFGQXTeX/sTNpg1Su6D11tzwC8ii5NojVQVb90BFQgd8ZEB9ON0fA6QTA00X1d8pAC9CbtbBtH3Dso+IduWrc8BXji02vCHccGzri6EdQDhUskhfloDcdKBsAowbJ3vfn4o79iiGFkDoGxSKjt2pHOAIn7UEkuNk3EHVMSbgDAOEHwXUHksFsWJsj8YB+CigxAUESInqOOsAPgQnbcX0ltVcIJyJxJLK+Rx1gBkq4bp/x2A6Y6q3u//ORD7j7ux/7zOM9osZm8AWEk1ryav1z7g8EVwJ7qIB1GfFSBiHRJYkR1s+PrcKaXJuOjcyzmg0zWTY5wDJrupc69fMnh9QFAGMikAAAAASUVORK5CYII=" %}
+
+
+
+<!-- The fixed position CV and (slightly transparent) background -->
+<div id="cvwide" style="position:fixed; height:{{totalheight}}px; top:{{site.headerinfo.height}}; display:none; z-index:9; width:100%; background-color:{{gray}}; opacity:{{opacity}}"></div>
+<div id="cvgray" style="position:fixed; height:{{totalheight}}px; top:{{site.headerinfo.height}}; display:none; z-index:10; width:95%; max-width:{{maxwidth}}px;">
+	<div id="cvclose" style="position:absolute; right:0; bottom:{{mainheight | plus: bottompad}}px; display:none; background-color:white;">
+
+		 <!-- Google Drive linked button -->
+		 <a href="{{mygd}}"><button class="btn btn--inverse" style="padding:0em; padding-right:0.3em; margin-top:0.1em; margin-bottom:0.1em; bottom:0; height:{{iconscale}}em;">
+<!--......--><img class="icon icons8-Google-Drive" style="width:{{iconscale}}em; height:{{iconscale}}em;" src="{{gdlink}}">Files<!-- -->
+<!---.--></button></a>
+
+		<!-- Close button -->
+		<button class="btn btn--inverse" style="padding:0em; margin:0.1em; bottom:0; height:{{iconscale}}em" onclick="hideToggle()">
+			<img class="icon icons8-Close-Window" style="padding:0em; margin:0em; width:{{iconscale}}em; height:{{iconscale}}em;" src="{{xlink}}">
+		</button>
+
+	</div>
+</div>
+<iframe id="cv" frameborder="1" src="https://drive.google.com/file/d/0B4AAwvZlUdfeS0NiSXdtZWVwUEk/preview" style="width:95%; max-width:{{maxwidth}}px; position:fixed; top:{{site.headerinfo.height}}; margin-top:{{padspace}}px; height:{{mainheight}}px; z-index:10; display:none"></iframe>
+
 
 
 <!-- This is needed to get HTML to know the spacing of the fixed things -->
 <div id="cvblank" style="padding-bottom:{{totalheight}}px; display:none; z-index:8; width:100%; background-color:white"></div>
-
-
-<!-- The fixed position CV and gray background -->
-<div id="cvgray" style="position:fixed; height:{{totalheight}}px; top:{{site.headerinfo.height}}; display:none; z-index:9; width:100%; background-color:{{gray}};"></div>
-<div style="width:95%; max-width:800px; position:fixed; top:{{site.headerinfo.height}}; margin-top:{{padspace}}px; height:{{mainheight}}px; z-index:10">
-	<iframe id="cv" frameborder="1" src="https://drive.google.com/file/d/0B4AAwvZlUdfeS0NiSXdtZWVwUEk/preview" style="width:100%; height:inherit; display:none"></iframe>
-</div>
 
 
 <!-- This living here is a little confusing. It's the spacing between the header and the title text, and when the broswer is narrow, the avatar area fits in here.
