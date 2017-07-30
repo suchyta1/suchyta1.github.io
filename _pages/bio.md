@@ -118,11 +118,11 @@ Although I actively continue to coauthor papers with DES, I have a new day-to-da
 In June 2016, I began my ongoing career at Oak Ridge National Lab (ORNL), joining the [Scientific Data Group][sdg].
 For the first time in decade, I was no longer in a physics department, making the jump to the Computer Science and Mathematics Division at ORNL.
 Our group focuses on techniques for managing, visualizing, and analyzing large-scale scientific data,
-partnering with the science teams to innovate solutions to computer science problems that impede scientific insight.
+partnering with the science teams to innovate solutions to computer science problems that impede domain science insight.
 On one project, I've been working with two teams of energy scientists who simulate fusion reactors, helping them to build a framework that couples two separate code bases,
 because the physics modeled in each alone is not enough to fully model next-generation devices.
 On another project, I am exploring new ways to manage scientific data such that users can interact with multiple 'views' of large datasets, 
-which present not only original full-quality data, but also error-understood reduced-quality versions with faster turnaround.
+which present not only the original full-quality data, but also error-understood reduced-quality versions with faster turnaround.
 
 While I still thoroughly enjoy supporting my favorite sports teams, drinking coffee, and solving crossword puzzles, my time living in the Knoxville area
 has seen a rise of interest in my personal fitness. Most days, working out is my favorite part of the day. 

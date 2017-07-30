@@ -40,9 +40,9 @@ read_time: false
 	</script>
 </div>
 <div style="position:relative; width:200px; content:''; display:table;"></div>
-Publications are how academics and researchers share their work for others to learn from, scrutinize, and push further.
+Publications are how academics and researchers share their work for others to learn from, scrutinize, and possible criticize or push further.
 I've coauthored roughly 100 peer-reviewed papers and counting, in the fields of astronomy and computer science. 
-I welcome you to query me using one of my favorite search tools linked above or to browse through some of the abstracts I've 
+I welcome you to query me using one of my favorite search that I've linked here or to browse through some of the abstracts I've 
 chosen to feature on this page.
 <div style="margin-top:-1em">
 	<a href="https://scholar.google.com/citations?user=_TMSiS8AAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar-square" style="{{fsize}}"></i></a><!--
@@ -52,12 +52,12 @@ chosen to feature on this page.
 </div>
 
 
-### Ph.D. Dissertation ###
+### PhD Dissertation ###
 
 Though it belongs in a slightly different classification group than most of my other publications,
 I'll also include a copy of my [PhD dissertation][dissertation] here.
 In graduate school, I studied/researched cosmology with the Dark Energy Survey collaboration, and the document overviews my work during those years.
-No doubt it's lengthy, but the chapters read more or less independently if you're interested.
+No doubt it's lengthy, but the chapters read more or less independently, if you're interested.
 It starts with an undergraduate-level introduction to cosmology, then gets more technical as it progresses.
 Scan through for the quotes that preface each chapter -- those are my favorite parts.
 

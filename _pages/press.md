@@ -6,7 +6,7 @@ read_time: false
 title: "Press"
 ---
 
-From time to time, I stumble upon public-facing news stories, press releases, etc. related to the projects I work on.
+It's not uncommon to stumble upon public-facing news stories, press releases, etc. related to the projects I work on.
 Here's a far from comprehensive, but reasonably representative sample. 
 
 
