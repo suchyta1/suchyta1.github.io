@@ -33,8 +33,12 @@ I am developing a framework that enables us to couple different simulation appli
 each optimized for a limited domain of the tokamak (in particular, one for the core and one for the edge),
 to build a whole device model.
 
-<div id="video" style="max-width:500px; width:95%">
-<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/fhZN0io1KiM" frameborder="0" allowfullscreen></iframe>
+<div id="video" style="max-width:560px;">
+	<iframe 
+		id="ytplayer" type="text/html" width="640" height="360" frameborder="0" gesture="media" allowfullscreen 
+		style="width:95%; height: calc(95 * (16/9))%"
+		src="https://www.youtube.com/embed/fhZN0io1KiM">
+	</iframe>
 </div>
 
 
@@ -51,7 +55,9 @@ I've been involved with application outreach, especially in the fusion community
 I've also taken part in ADIOS' data reduction capability development, 
 and am exploring using ADIOS in new ways to facilitate access to data at multiple precision levels.
 
-<img src="/assets/images/adios-speedup.png" style="max-width:400px; width:95%">
+<div style="max-width:460px;">
+	<img src="/assets/images/adios-speedup.png" style="width:95%">
+</div>
 
 
 
@@ -64,6 +70,10 @@ Over those years, I've worked on a number things, but they've always seemed to e
 Among other things, I was part of the team that designed the camera control system mentioned in the video (SISPI),
 and also developed a new simulation package to understand systematic contaminants in the data (called [{{balrog}}](https://github.com/emhuff/Balrog))
 
-<div id="video" style="max-width:500px; width:95%">
-<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/qxx7UjFC93M" frameborder="0" allowfullscreen></iframe>
+<div id="video" style="max-width:560px;">
+	<iframe 
+		id="ytplayer" type="text/html" width="640" height="360"  frameborder="0" gesture="media" allowfullscreen
+		style="width:95%; height: calc(95 * (16/9))%"
+		src="https://www.youtube.com/embed/qxx7UjFC93M">
+	</iframe>
 </div>
