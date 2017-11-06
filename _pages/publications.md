@@ -40,7 +40,7 @@ read_time: false
 	</script>
 </div>
 <div style="position:relative; width:200px; content:''; display:table;"></div>
-Publications are how academics and researchers share their work for others to learn from, scrutinize, and possible criticize or push further.
+Publications are how academics and researchers share their work for others to learn from, scrutinize, and possibly criticize or push further.
 I've coauthored roughly 100 peer-reviewed papers and counting, in the fields of astronomy and computer science. 
 I welcome you to query me using one of my favorite search that I've linked here or to browse through some of the abstracts I've 
 chosen to feature on this page.
