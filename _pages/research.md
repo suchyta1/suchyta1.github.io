@@ -14,7 +14,7 @@ I won't include an exhaustive list, as my group at ORNL is involved with a very 
 so I'll focus on some of the ones that I tend to work on most directly.
 
 
-## Fusion Whole Device Modeling 
+## Fusion Whole Device Modeling ##
 
 [Tokamaks](https://en.wikipedia.org/wiki/Tokamak) are experimental devices for studying fusion reactions.
 [ITER](https://www.iter.org/) will be the largest such device ever constructed, whose goal is to demonstrate 
@@ -38,7 +38,7 @@ to build a whole device model.
 </div>
 
 
-## Efficient I/O with ADIOS
+## Efficient I/O with ADIOS ##
 
 I am part of the computer science team responsible for the [ADIOS (Adaptable I/O System)](https://github.com/ornladios/ADIOS) software.
 One of the biggest challenges in high performance computing is I/O (input/output). 
@@ -55,7 +55,7 @@ and am exploring using ADIOS in new ways to facilitate access to data at multipl
 
 
 
-## Cosmology with DES
+## Cosmology with DES ##
 
 Since graduate school, I've been involved with the [Dark Energy Survey (DES)](https://www.darkenergysurvey.org/).
 DES is an astronomy project attempting to better understand the properties of the expansion of the Universe,
