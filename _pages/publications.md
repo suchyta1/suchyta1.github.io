@@ -21,7 +21,9 @@ read_time: false
 <div style="max-width:500px; width:100%; margin:auto; float:right; margin-left:20px; margin-bottom:20px">
 	<!--<h3 align="center" style="color:green; margin-top:-1em"> <i>Selected Abstracts</i> </h3>-->
 	<div id="slider" style="">
-		<a href="https://www.usenix.org/conference/hotstorage17/program/presentation/lu"><img src="/assets/images/abstracts/canopus-square.png"></a>
+		<a href="http://ieeexplore.ieee.org/abstract/document/8048917/"><img src="/assets/images/abstracts/canopus-cluster-square.png"></a>
+		<!--<a href="https://www.usenix.org/conference/hotstorage17/program/presentation/lu"><img src="/assets/images/abstracts/canopus-square.png"></a>-->
+		<a href="https://inspirehep.net/record/1630827"><img data-src="/assets/images/abstracts/siren-square.png"></a>
 		<a href="http://inspirehep.net/record/1351294"><img data-src="/assets/images/abstracts/dwarfs-square.png"></a>
 		<a href="http://iopscience.iop.org/article/10.1088/1742-6596/759/1/012095/meta#artAbst"><img data-src="/assets/images/abstracts/sirius-square.png"></a>
 		<a href="http://inspirehep.net/record/1385717"><img src="/assets/images/abstracts/balrog-square.png"></a>
